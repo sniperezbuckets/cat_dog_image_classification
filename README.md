@@ -8,9 +8,9 @@ You can get the data [here](https://drive.google.com/file/d/1w2Z-XREFr7bCLfLCJ5d
 
 The repository is organized as follows:
 
-- `data_preprocessing.py/`:  There are 12500 images of cats and 12500 images of dogs. The data was not preprocessed (all images in a single folder), Therefore I've created a simple python script to split the images into different folders, Train, Validation and test all containing subfolders of cat and dog images. The Test folder contains 10% and the validation folder 15% of the dataset (25000) images.
-
 - `notebook/`: This directory contains the Jupyter notebook (`experimentation.ipynb`) where the initial data exploration, preprocessing, and model experimentation were carried out.
+
+-  `data_preprocessing.py/`:  There are 12500 images of cats and 12500 images of dogs. The data was not preprocessed (all images in a single folder), Therefore I've created a simple python script to split the images into different folders, Train, Validation and test all containing subfolders of cat and dog images. The Test folder contains 10% and the validation folder 15% of the dataset (25000) images.
 
 - `model/`: This directory contains the trained models used for classification.
 
