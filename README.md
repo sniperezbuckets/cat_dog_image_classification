@@ -19,6 +19,7 @@ The repository is organized as follows:
   - `efficientnet_model/`: This subdirectory contains the code and weights for a pre-trained EfficientNetB0 model, which achieved an accuracy of 97%. It includes both the model architecture and the pre-trained weights.
 
 - `app.py`: This file contains the Streamlit code for the interactive web application. Users can upload images of dogs and cats to the app and get real-time predictions using the trained models.
+- `requirements.txt`: This file contains all packages that need to be installed for the app to work.
 
 ## Usage
 
