@@ -1,12 +1,14 @@
 # Dog and Cat Image Classification with Streamlit
 
 This repository contains code and resources for a dog and cat image classification project using Streamlit. The project includes a notebook for experimentation, trained models for classification, and a Streamlit app for interactive visualization.
-I have downloaded the data on [Kaggle.com](https://www.kaggle.com/). There are 12500 images of cats and 12500 images of dogs. The data was not preprocessed (all images of a single folder), Therefore I've created a simple python script [here](https://drive.google.com/file/d/1sivJQm4nJLSNLnC-D9gonHQdTPq6xnAH/view?usp=sharing) to split the images into different folders, Train, Validation and test all containing subfolders of cat and dog images. The Test folder contains 10% and the validation folder 15% of the dataset (25000) images.
+I have downloaded the data on [Kaggle.com](https://www.kaggle.com/).
 You can get the data [here](https://drive.google.com/file/d/1w2Z-XREFr7bCLfLCJ5dKPo4osOsjjZxx/view?usp=sharing).
 
 ## Project Structure
 
 The repository is organized as follows:
+
+- `data_preprocessing.py/`:  There are 12500 images of cats and 12500 images of dogs. The data was not preprocessed (all images in a single folder), Therefore I've created a simple python script to split the images into different folders, Train, Validation and test all containing subfolders of cat and dog images. The Test folder contains 10% and the validation folder 15% of the dataset (25000) images.
 
 - `notebook/`: This directory contains the Jupyter notebook (`experimentation.ipynb`) where the initial data exploration, preprocessing, and model experimentation were carried out.
 
