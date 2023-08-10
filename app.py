@@ -2,6 +2,7 @@ import streamlit as st
 import tensorflow as tf
 import tensorflow_hub as hub
 from PIL import Image
+import PIL
 import validators
 import requests
 from io import BytesIO
@@ -38,10 +39,14 @@ def upload_image(upload_type):
 
         elif img_url and validators.url(img_url):
             response = requests.get(img_url)
-            img = Image.open(BytesIO(response.content))
-            resize_and_read_img(img)
-            prep_img = preprocess_img(img)
-            return prep_img
+            try:
+                img = Image.open(BytesIO(response.content))
+                resize_and_read_img(img)
+                prep_img = preprocess_img(img)
+                return prep_img
+            except PIL.UnidentifiedImageError:
+                st.error(
+                    'An unexpected error occured, please retry or upload another image link.')
 
 
 def preprocess_img(img):
